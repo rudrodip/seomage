@@ -23,7 +23,10 @@
     "sharp": "^0.33.3",
     "yargs": "^17.7.2"
   },
-  "version": "0.0.2",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "version": "0.0.5",
   "repository": {
     "type": "git",
     "url": "https://github.com/rudrodip/seomage.git"
