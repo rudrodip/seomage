@@ -1,15 +1,23 @@
 # seomage
 
-To install dependencies:
+It's a simple CLI tool to generate favicons in different sizes and formats from a single image.
+
+## Run
 
 ```bash
-bun install
+npx seomage -i path/to/image.png -o path/to/output -p
 ```
 
-To run:
+or
 
 ```bash
-bun run index.ts
+npx seomage
 ```
 
-This project was created using `bun init` in bun v1.1.3. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+## Options
+
+- `-i`, `--input` - Path to the input image.
+- `-o`, `--output` - Path to the output directory.
+- `-p`, `--pwa` - Generate PWA icons.
+
+Default output is set to `public` as nextjs use this directory for static files.
