@@ -1,0 +1,26 @@
+{
+  "name": "seomage",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "build": "bun build ./index.ts --outdir ./build --target node",
+    "start": "bun run build && node build/index.js"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/inquirer": "^9.0.7",
+    "@types/yargs": "^17.0.32"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "bin": {
+    "seomage": "build/index.js"
+  },
+  "dependencies": {
+    "inquirer": "^9.2.17",
+    "sharp": "^0.33.3",
+    "yargs": "^17.7.2"
+  },
+  "version": "0.0.1"
+}
