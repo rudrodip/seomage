@@ -60,8 +60,9 @@ async function main() {
   try {
     await generateImages(image, output, config);
     console.log("Images generated successfully");
-  } catch (error) {
+  } catch (error: any) {
     console.log("Failed to generate images")
+    console.log(error.message)
   }
 }
 
